@@ -27,8 +27,8 @@ could have been better in regards to organizing the form logic (does anything lo
 
 
 ### Outside code
--Laravel 5
--composer packages
---faker for user data
---lorem ipsum for nonsense paragraphs
--bootstrap
+Laravel 5
+composer packages
+-faker for user data
+-lorem ipsum for nonsense paragraphs
+bootstrap
