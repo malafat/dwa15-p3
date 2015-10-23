@@ -13,15 +13,7 @@
 Route::get('/', function () {
     return view('landing');
 });
-Route::get('/users', function () {
-    return view('users');
-});
-Route::post('/users', function () {
-    return view('users');
-});
-Route::get('/filler', function () {
-    return view('filler');
-});
-Route::post('/filler', function () {
-    return view('filler');
-});
+Route::get('/users', 'UsersController@getIndex');
+Route::post('/users', 'UsersController@postIndex');
+Route::get('/filler', 'FillerController@getIndex');
+Route::post('/filler', 'FillerController@postIndex');
