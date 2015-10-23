@@ -11,7 +11,7 @@ create a data set for populating a database or testing validation (because, at
 a single user's returned data is not all always coherent)
 
 ### Demo
-soon
+<http://screencast.com/t/kkW2Rmg3le>
 
 ### Details for teaching team
 I feel like laravel's documentation for newer versions is a little sub par and
