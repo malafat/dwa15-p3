@@ -1,6 +1,6 @@
 # dwa15 - Project 3 - Developers' best friend
 ### Live URL
-soon
+<http://p3.malafat.me/>
 
 ### Description
 This project is a excersise in the use and understanding of Laravel framework as
