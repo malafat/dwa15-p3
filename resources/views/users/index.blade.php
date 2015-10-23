@@ -16,13 +16,15 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <h1>Create randomized user data with this tool</h1>
+  <h1>Random User Data</h1>
+  <h4># of users</h4>
   <form method='POST'>
   	<input type='hidden' name='_token' value='{{ csrf_token() }}'>
   	<input type='number' name='num_users' value='{{ old('num_users') }}' min='0' max='99'><br>
-  	<input type="checkbox" name='show_email' value=''> Email<br>
+  	<input type="checkbox" name='show_email' value=''> Email
     <input type="checkbox" name='show_username' value='{{ old('show_username') }}'> Username<br>
-  	<input type='submit' value='Generate'>
+    <input type="checkbox" name='show_password' value='{{ old('show_username') }}'> Password<br>
+    <input type='submit' value='Generate'>
   </form>
 @stop
 

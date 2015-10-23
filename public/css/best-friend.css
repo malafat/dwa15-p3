@@ -1,0 +1,51 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Arial';
+    background: #687365;
+    color: #293538;
+}
+
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+    color:#989C96;
+    background: #31313F;
+    width: 32em;
+    min-width: 32em;
+}
+.output{
+  margin-top: 75px;
+  margin-left: 20px;
+  font-family: 'Courier';
+}
+.content {
+    margin-top: 25px;
+    display: inline-block;
+}
+.title {
+    font-size: 46px;
+    font-family: 'times';
+}
+
+a:link {
+    color: #687365;
+}
+a:visited {
+    color: #71866A;
+}
+a:hover {
+    color: #466446;
+}
+a:active {
+    color: #0000FF;
+}

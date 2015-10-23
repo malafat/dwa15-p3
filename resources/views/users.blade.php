@@ -63,8 +63,8 @@
             </div>
         </div>
 		<section class='output'>
-		
-		<pre><?php 
+
+		<pre><?php
 				if (isset($_POST['num_users'])){
 					$faker = Faker\Factory::create();
 					$num_users = $_POST['num_users'];

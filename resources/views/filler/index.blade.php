@@ -16,19 +16,18 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <h1>Create filler text with this tool</h1>
+  <h1>Random Placeholder Text</h1>
   <form method='POST'>
+    <h5># of paragraphs</h5>
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
-    # of paragraphs: <input type='number' name='length' value='{{old('length')}}' min='0' max='99'><br>
+    <input type='number' name='length' value='{{old('length')}}' min='0' max='99'><br>
     <input type='submit' value='Generate tasty filling...'>
   </form>
   <br>
 
 @stop
 
-@section('output')
-  {!!$output!!}
-@stop
+
 
 
 

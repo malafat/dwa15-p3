@@ -1,46 +1,43 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>A Developer's Best Friend</title>
+@extends('layouts.master')
 
-        <style>
-            html, body {
-                height: 100%;
-            }
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Courier';
-            }
+@section('title')
+    A Developer's Pal
+@stop
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+{{--
+This `head` section will be yielded right before the closing </head> tag.
+Use it to add specific things that *this* View needs in the head,
+such as a page specific stylesheets.
+--}}
+@section('head')
+@stop
 
-            .title {
-                font-size: 32px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">A Developer's Best Friend</div>
-            </div>
+
+@section('content')
+    <div class="container">
+        <div class="content">
+            <div class="title">A Developer's Best Friend</div>
         </div>
-		<a href='/filler'>Generate filler text!</a>
-		<a href='/users'>Generate dummy user data!</a>
-		
-    </body>
-</html>
+
+    </div>
+
+@stop
+
+@section('output')
+<a href='/filler'>Generate filler text!</a>
+<a href='/users'>Generate dummy user data!</a>
+@stop
+
+
+
+{{--
+This `body` section will be yielded right before the closing </body> tag.
+Use it to add specific things that *this* View needs at the end of the body,
+such as a page specific JavaScript files.
+--}}
+@section('body')
+
+    <script src="/js/books/show.js"></script>
+@stop

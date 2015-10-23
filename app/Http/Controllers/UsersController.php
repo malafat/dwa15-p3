@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use \App\Library\Password;
 
 class UsersController extends Controller{
 
@@ -21,9 +22,7 @@ class UsersController extends Controller{
     $data = $request->all();
     $output = array();
     $faker = \Faker\Factory::create();
-    $num_users = $data['num_users'];
-
-    for($i=0; $i < $num_users; $i++){
+    for($i=0; $i < $data['num_users']; $i++){
       $user = array('Name' => $faker->name);
       if(isset($data['show_email'])){
         $user['Email'] = $faker->safeEmail;
@@ -31,11 +30,15 @@ class UsersController extends Controller{
       if(isset($data['show_username'])){
         $user['User Name'] = $faker->userName;
       }
+      if(isset($data['show_password'])){
+        $user['Password'] = generatePassword(rand(2,6));
+      }
       array_push($output, $user);
     }
     $request->flash();
     return view('users.postIndex')
         ->with(['output' => $output]);
   }
+
 
 }
