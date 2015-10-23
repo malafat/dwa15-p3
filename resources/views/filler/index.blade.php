@@ -16,7 +16,7 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <h1>Random Placeholder Text</h1>
+  <h2>Random Placeholder Text</h2>
   <form method='POST'>
     <h5># of paragraphs</h5>
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
